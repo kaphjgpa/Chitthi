@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./MainApp.css";
-import Header from "./Components/Header";
+// import Header from "./Components/Header";
 import Login from "./Login";
 import Loading from "./Loading";
 import firebase from "firebase";
