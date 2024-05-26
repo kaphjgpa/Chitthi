@@ -1,0 +1,143 @@
+.navbar {
+  height: 6rem;
+  background-color: #dad6d1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dad6d1;
+}
+
+.navbar_container {
+  display: flex;
+  flex-direction: row;
+  height: 3rem;
+  width: 70vw;
+  align-items: center;
+}
+
+.navbar_left {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar_left > p {
+  font-size: 1.5rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  padding-left: 1rem;
+}
+
+.logo {
+  height: 3rem;
+  width: 3rem;
+}
+
+.navbar_center {
+  width: 45rem;
+  display: flex;
+  justify-content: flex-start;
+  justify-content: space-evenly;
+  flex: 3;
+}
+
+.navlink {
+  font-size: 1.1rem;
+  font-family: "Rubik", sans-serif;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.navbar_right {
+  margin-left: 5rem;
+}
+
+.app_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  background: black;
+  color: #ffffff;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  border-radius: 7px;
+  height: 3rem;
+  width: 10rem;
+}
+
+.logo_btn {
+  padding-right: 10px;
+  height: 30px;
+  width: 30px;
+}
+.gradient_App {
+  position: absolute;
+  height: 32rem;
+  width: 32rem;
+  top: 15rem;
+  left: 2rem;
+  border-radius: 100%;
+  animation: anim 40s linear infinite;
+  background: linear-gradient(
+    to right bottom,
+    rgb(255, 72, 0),
+    rgba(112, 0, 187)
+  );
+  z-index: -5;
+}
+
+@keyframes anim {
+  0%,
+  100% {
+    border-radius: 30% 70% 70% 30% / 30% 52% 48% 70%;
+    box-shadow: 0 -2vmin 3vmin LightPink inset, 0 1vmin 4vmin MediumPurple inset,
+      0 -2vmin 7vmin purple inset;
+  }
+
+  10% {
+    border-radius: 50% 50% 20% 80% / 25% 80% 20% 75%;
+  }
+
+  20% {
+    border-radius: 67% 33% 47% 53% / 37% 20% 80% 63%;
+  }
+
+  30% {
+    border-radius: 39% 61% 47% 53% / 37% 40% 60% 63%;
+    box-shadow: -1vmin -2vmin 3vmin LightPink inset,
+      -1vmin -2vmin 4vmin MediumPurple inset, 1vmin -1vmin 7vmin purple inset;
+  }
+
+  40% {
+    border-radius: 39% 61% 82% 18% / 74% 40% 60% 26%;
+  }
+
+  50% {
+    border-radius: 100%;
+    box-shadow: 0 2vmin 3vmin LightPink inset, 0 1vmin 4vmin MediumPurple inset,
+      0 2vmin 7vmin purple inset;
+  }
+
+  60% {
+    border-radius: 50% 50% 53% 47% / 72% 69% 31% 28%;
+  }
+
+  70% {
+    border-radius: 50% 50% 53% 47% / 26% 22% 78% 74%;
+    box-shadow: 1vmin 1vmin 4vmin LightPink inset,
+      2vmin -1vmin 4vmin MediumPurple inset, -1vmin -1vmin 5vmin purple inset;
+  }
+
+  80% {
+    border-radius: 50% 50% 53% 47% / 26% 69% 31% 74%;
+  }
+
+  90% {
+    border-radius: 20% 80% 20% 80% / 20% 80% 20% 80%;
+  }
+}

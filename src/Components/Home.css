@@ -1,0 +1,505 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  height: 260vh;
+  background-color: #dad6d1;
+  backdrop-filter: blur(5rem);
+}
+.hero_section {
+  display: flex;
+  height: 100vh;
+  backdrop-filter: blur(5rem);
+  /* background-color: #dad6d1; */
+  z-index: 3;
+}
+.hero_left {
+  flex: 1;
+  flex-direction: column;
+  padding-left: 15rem;
+  padding-top: 15rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.with_underline {
+  display: inline-block;
+  padding: 8px 8px;
+  background-image: url(https://www.freeiconspng.com/uploads/black-brush-stroke-banner-4.png);
+  /* background-image: url("https://www.freeiconspng.com/uploads/brush-stroke-grunge-transparent-background-6.png"); */
+
+  background-position: 150% 900%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.hero_text {
+  font-size: 64px;
+  font-weight: 400;
+  padding-bottom: 1.5rem;
+  text-align: start;
+}
+
+.hero_subheading {
+  height: 7rem;
+  width: 33rem;
+  font-weight: 300;
+  font-size: 26px;
+  text-align: start;
+}
+
+.hero_right {
+  flex: 1;
+  padding-top: 10rem;
+  padding-left: 5rem;
+  padding-right: 15rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero_right > img {
+  animation: move-up 2.5s infinite alternate;
+}
+
+/* .hue_shift {
+  animation: hue_shift 4s infinite alternate;
+} */
+
+.gradient1 {
+  position: absolute;
+  height: 40rem;
+  width: 40rem;
+  top: 10rem;
+  left: 13rem;
+  border-radius: 50%;
+  animation: anim 20s infinite alternate;
+  background: linear-gradient(
+    to right bottom,
+    rgb(240, 125, 31),
+    rgb(132, 0, 219)
+  );
+  z-index: -5;
+}
+
+.gradient2 {
+  position: absolute;
+  height: 35rem;
+  width: 35rem;
+  top: 15rem;
+  right: 10rem;
+  border-radius: 50%;
+  animation: anim 15s infinite alternate;
+  background: linear-gradient(
+    to right bottom,
+    rgb(132, 0, 219),
+    rgb(240, 125, 31)
+  );
+  z-index: -1;
+}
+
+@keyframes move-up {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(3rem);
+  }
+}
+
+/* @keyframes hue_shift {
+  from {
+    filter: hue-rotate(0);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+} */
+
+.testimonials {
+  background-color: #252525;
+  color: #dad6d1;
+  backdrop-filter: blur(6rem);
+  z-index: 3;
+  height: 160vh;
+}
+
+.heading {
+  height: 15vh;
+  padding-top: 3rem;
+  padding-left: 35rem;
+  font-size: 54px;
+  font-weight: 200;
+  align-items: center;
+}
+
+.heading > h2 {
+  height: 8rem;
+  width: 55rem;
+}
+
+.client_row1 {
+  display: flex;
+}
+
+.client1 {
+  flex: 1;
+  margin: 2rem 5rem 2rem 20rem;
+  padding: 2rem;
+  border-radius: 10px;
+  /* animation: anim 20s infinite alternate; */
+  border: 1px solid #dad6d1;
+  backdrop-filter: blur(6rem);
+  z-index: 3;
+  /* display: none; */
+}
+
+.client2 {
+  flex: 1;
+  margin: 2rem 20rem 2rem 5rem;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid #dad6d1;
+  backdrop-filter: blur(6rem);
+  z-index: 3;
+}
+
+.stars {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+  text-justify: center;
+}
+.star {
+  height: 40px;
+  width: 140px;
+  padding-bottom: 2rem;
+}
+
+.stars > h4 {
+  font-size: 32px;
+  font-weight: 400;
+  padding-bottom: 1.5rem;
+}
+
+.stars > p {
+  font-size: 16px;
+  font-weight: 100;
+  padding-bottom: 1.5rem;
+}
+
+.client_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.client_wrapper > img {
+  height: 52px;
+  width: 52px;
+  border-radius: 10px;
+}
+
+.client_wrapper > h4 {
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 1rem;
+}
+
+.client_wrapper > p {
+  padding-top: 0.5rem;
+}
+
+/* #EB6C68 */
+
+.gradient3 {
+  position: absolute;
+  height: 15rem;
+  width: 15rem;
+  top: 11rem;
+  left: 16rem;
+  border-radius: 50%;
+  animation: anim 20s infinite alternate;
+  background: linear-gradient(
+    to right bottom,
+    rgb(240, 118, 18),
+    rgb(132, 0, 219)
+  );
+  z-index: -5;
+}
+
+.gradient4 {
+  position: absolute;
+  height: 15rem;
+  width: 15rem;
+  top: 20rem;
+  left: 24rem;
+  border-radius: 50%;
+  background: linear-gradient(
+    to right bottom,
+    rgb(240, 118, 18),
+    rgb(132, 0, 219)
+  );
+  z-index: -5;
+}
+.gradient5 {
+  position: absolute;
+  height: 15rem;
+  width: 15rem;
+  top: 29rem;
+  left: 32rem;
+  border-radius: 50%;
+  background: linear-gradient(
+    to right bottom,
+    rgb(240, 118, 18),
+    rgb(132, 0, 219)
+  );
+  z-index: -5;
+}
+.gradient6 {
+  position: absolute;
+  height: 15rem;
+  width: 15rem;
+  top: 52rem;
+  left: 35rem;
+  border-radius: 50%;
+  animation: anim 25s infinite alternate;
+  background: linear-gradient(
+    to right bottom,
+    rgb(240, 118, 18),
+    rgb(132, 0, 219)
+  );
+  z-index: -5;
+}
+
+.gradient7 {
+  position: absolute;
+  height: 15rem;
+  width: 15rem;
+  top: 47rem;
+  left: 54rem;
+  border-radius: 50%;
+  animation: anim 30s infinite alternate;
+  background: linear-gradient(
+    to right bottom,
+    rgb(240, 118, 18),
+    rgb(132, 0, 219)
+  );
+  z-index: -5;
+}
+.gradient8 {
+  position: absolute;
+  height: 15rem;
+  width: 15rem;
+  top: 56rem;
+  left: 64rem;
+  border-radius: 50%;
+  background: linear-gradient(
+    to right bottom,
+    rgb(240, 118, 18),
+    rgb(132, 0, 219)
+  );
+  z-index: -5;
+}
+
+.gradient9 {
+  position: absolute;
+  height: 15rem;
+  width: 15rem;
+  top: 65rem;
+  left: 74rem;
+  border-radius: 50%;
+  background: linear-gradient(
+    to right bottom,
+    rgb(240, 118, 18),
+    rgb(132, 0, 219)
+  );
+  z-index: -5;
+}
+.gradient10 {
+  position: absolute;
+  height: 15rem;
+  width: 15rem;
+  top: 54rem;
+  left: 95rem;
+  border-radius: 50%;
+  animation: anim 22s infinite alternate;
+  background: linear-gradient(
+    to right bottom,
+    rgb(240, 118, 18),
+    rgb(132, 0, 219)
+  );
+  z-index: -5;
+}
+
+.gradient11 {
+  position: absolute;
+  height: 15rem;
+  width: 15rem;
+  top: 11rem;
+  right: 16rem;
+  border-radius: 50%;
+  animation: anim 20s infinite alternate;
+  background: linear-gradient(
+    to right bottom,
+    rgb(240, 118, 18),
+    rgb(132, 0, 219)
+  );
+  z-index: -5;
+}
+.gradient12 {
+  position: absolute;
+  height: 15rem;
+  width: 15rem;
+  top: 20rem;
+  right: 24rem;
+  border-radius: 50%;
+  background: linear-gradient(
+    to right bottom,
+    rgb(240, 118, 18),
+    rgb(132, 0, 219)
+  );
+  z-index: -5;
+}
+.gradient13 {
+  position: absolute;
+  height: 15rem;
+  width: 15rem;
+  top: 29rem;
+  right: 32rem;
+  border-radius: 50%;
+  background: linear-gradient(
+    to right bottom,
+    rgb(240, 118, 18),
+    rgb(132, 0, 219)
+  );
+  z-index: -5;
+}
+.gradient14 {
+  position: absolute;
+  height: 15rem;
+  width: 15rem;
+  top: 38rem;
+  right: 40rem;
+  border-radius: 50%;
+  animation: anim 28s infinite alternate;
+  background: linear-gradient(
+    to right bottom,
+    rgb(240, 118, 18),
+    rgb(132, 0, 219)
+  );
+  z-index: -5;
+}
+.gradient15 {
+  position: absolute;
+  height: 15rem;
+  width: 15rem;
+  top: 47rem;
+  right: 54rem;
+  border-radius: 50%;
+  background: linear-gradient(
+    to right bottom,
+    rgb(240, 118, 18),
+    rgb(132, 0, 219)
+  );
+  z-index: -5;
+  display: none;
+}
+.gradient16 {
+  position: absolute;
+  height: 15rem;
+  width: 15rem;
+  top: 56rem;
+  right: 63rem;
+  border-radius: 50%;
+  background: linear-gradient(
+    to right bottom,
+    rgb(240, 118, 18),
+    rgb(132, 0, 219)
+  );
+  z-index: -5;
+}
+.gradient17 {
+  position: absolute;
+  height: 15rem;
+  width: 15rem;
+  top: 65rem;
+  right: 74rem;
+  border-radius: 50%;
+  background: linear-gradient(
+    to right bottom,
+    rgb(240, 118, 18),
+    rgb(132, 0, 219)
+  );
+  z-index: -5;
+}
+.gradient18 {
+  position: absolute;
+  height: 15rem;
+  width: 15rem;
+  top: 65rem;
+  right: 95rem;
+  border-radius: 50%;
+  animation: anim 24s infinite alternate;
+  background: linear-gradient(
+    to right bottom,
+    rgb(240, 118, 18),
+    rgb(132, 0, 219)
+  );
+  z-index: -5;
+}
+
+@keyframes anim {
+  0%,
+  100% {
+    border-radius: 30% 70% 70% 30% / 30% 52% 48% 70%;
+    box-shadow: 0 -2vmin 3vmin LightPink inset, 0 1vmin 4vmin MediumPurple inset,
+      0 -2vmin 7vmin purple inset;
+  }
+
+  10% {
+    border-radius: 50% 50% 20% 80% / 25% 80% 20% 75%;
+  }
+
+  20% {
+    border-radius: 67% 33% 47% 53% / 37% 20% 80% 63%;
+  }
+
+  30% {
+    border-radius: 39% 61% 47% 53% / 37% 40% 60% 63%;
+    box-shadow: -1vmin -2vmin 3vmin LightPink inset,
+      -1vmin -2vmin 4vmin MediumPurple inset, 1vmin -1vmin 7vmin purple inset;
+  }
+
+  40% {
+    border-radius: 39% 61% 82% 18% / 74% 40% 60% 26%;
+  }
+
+  50% {
+    border-radius: 100%;
+    box-shadow: 0 2vmin 3vmin LightPink inset, 0 1vmin 4vmin MediumPurple inset,
+      0 2vmin 7vmin purple inset;
+  }
+
+  60% {
+    border-radius: 50% 50% 53% 47% / 72% 69% 31% 28%;
+  }
+
+  70% {
+    border-radius: 50% 50% 53% 47% / 26% 22% 78% 74%;
+    box-shadow: 1vmin 1vmin 4vmin LightPink inset,
+      2vmin -1vmin 4vmin MediumPurple inset, -1vmin -1vmin 5vmin purple inset;
+  }
+
+  80% {
+    border-radius: 50% 50% 53% 47% / 26% 69% 31% 74%;
+  }
+
+  90% {
+    border-radius: 20% 80% 20% 80% / 20% 80% 20% 80%;
+  }
+}
