@@ -176,8 +176,8 @@
 .chat_screen {
   flex: 0.95;
   padding-top: 10px;
-  padding-bottom: 1rem;
   overflow-y: scroll;
+  z-index: 10;
 }
 
 .chat_screen > p {
@@ -193,6 +193,17 @@
   border-radius: 10px;
 }
 
+.send_Image_Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 70px;
+  width: 40px;
+  margin-right: 10px;
+  flex: 0.2;
+}
+
 .add_docs {
   display: flex;
   align-items: center;
@@ -203,7 +214,7 @@
 
 .input_bar {
   display: flex;
-  flex: 0.8;
+  flex: 0.6;
 }
 
 .emoji_send {
@@ -429,22 +440,8 @@
   flex: 1;
 }
 
-.send_Image_Container {
-  display: flex;
-  flex-direction: column;
-  object-fit: contain;
-  width: 10rem;
-  backdrop-filter: blur(6rem);
-}
-
-.send_Image_Container > h3 {
-  padding-right: 15rem;
-  padding-top: 0.7rem;
-}
-
 .send_Image_Container > img {
-  height: 95%;
-  width: 95%;
+  width: 100%;
   object-fit: contain;
 }
 
@@ -490,5 +487,5 @@
 }
 
 .autoScroll {
-  margin-bottom: 10rem;
+  margin-bottom: 10px;
 }

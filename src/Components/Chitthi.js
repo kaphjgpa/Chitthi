@@ -52,6 +52,7 @@ function Chitthi() {
   // Add Emojis in Chats or Groups
   const [showEmojis, setShowEmojis] = useState(false);
   const [chosenEmoji, setChosenEmoji] = useState(null);
+
   const onEmojiClick = (event, emojiObject) => {
     setChosenEmoji(emojiObject);
   };
@@ -181,11 +182,11 @@ function Chitthi() {
       .doc(chatId)
       .collection("messages")
       .add({
-        timestamp: firebase.firestore.FieldValue.serverTimestamp(),
         message: chatInput,
         name: user.displayName,
         user: user.email,
         photoURL: user.photoURL,
+        timestamp: firebase.firestore.FieldValue.serverTimestamp(),
       })
       // Upload Images to firestore
       .then((doc) => {
@@ -444,19 +445,18 @@ function Chitthi() {
               ))}
               <div className="autoScroll" ref={autoScroll}></div>
             </div>
-            {showEmojis ? (
+            {/* {showEmojis ? (
               <Emoji className="emoji_tray" onEmojiClick={onEmojiClick} />
-            ) : null}
+            ) : null} */}
             {imageToGroups && (
               <div className="send_Image_Container">
+                <img src={imageToGroups} alt="Selected Image" />
                 <CancelIcon
                   className="cancel_btn"
                   fontSize="small"
                   color="error"
                   onClick={removeGroupImage}
                 />
-                <img src={imageToGroups} alt="Selected Image" />
-                {/* Audio support is coming soon */}
               </div>
             )}
             {/* {fileToGroup && (
@@ -582,17 +582,19 @@ function Chitthi() {
             {showEmojis ? (
               <Emoji className="emoji_tray" onEmojiClick={onEmojiClick} />
             ) : null}
-            {imageToMessage && (
+
+            {/* {imageToMessage && (
               <div className="send_Image_Container">
+                <img src={imageToMessage} alt="Selected Image" />
                 <CancelIcon
                   className="cancel_btn"
                   fontSize="small"
                   color="error"
                   onClick={removeImage}
                 />
-                <img src={imageToMessage} alt="Selected Image" />
               </div>
-            )}
+            )} */}
+
             {/* {fileToMessage && (
               <div className="send_Image_Container">
                 <CancelIcon
@@ -607,18 +609,29 @@ function Chitthi() {
             )} */}
             <div className="chitthi_chat_footer">
               <div className="add_docs">
+                {imageToMessage && (
+                  <div className="send_Image_Container">
+                    <CancelIcon
+                      className="cancel_btn"
+                      fontSize="small"
+                      color="error"
+                      onClick={removeImage}
+                    />
+                    <img src={imageToMessage} alt="Selected Image" />
+                  </div>
+                )}
                 <IconButton>
                   <ImageIcon
                     onClick={() => imagePickerRef.current.click()}
                     fontSize="default"
                   />
+                  <input
+                    ref={imagePickerRef}
+                    onChange={addImageToMessage}
+                    type="file"
+                    hidden
+                  />
                 </IconButton>
-                <input
-                  ref={imagePickerRef}
-                  onChange={addImageToMessage}
-                  type="file"
-                  hidden
-                />
               </div>
               <div className="input_bar">
                 <form className="Form">
@@ -638,12 +651,12 @@ function Chitthi() {
                 </form>
               </div>
               <div className="emoji_send">
-                <IconButton>
+                {/* <IconButton>
                   <EmojiEmotionsIcon
                     onClick={() => setShowEmojis(!showEmojis)}
                     fontSize="default"
                   />
-                </IconButton>
+                </IconButton> */}
                 <IconButton>
                   <TelegramIcon
                     disabled={!chatInput}
